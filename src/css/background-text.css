@@ -1,0 +1,64 @@
+/* Text background. Author: Krygin D.A., 11.2020 */
+
+span[class^="span_background"] {
+    position: relative;
+    z-index: 2;
+    vertical-align: middle;
+}
+
+span[class^="span_background"]::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    z-index: -1;
+}
+
+.span_background_header_1::after {
+    bottom: 12px;
+    height: 48px;
+    background: #fff83c;
+    width: calc(100% + 30px);
+}
+
+.span_background_header_2::after {
+    bottom: 4px;
+    height: 6px;
+    background: #fdcb43;
+    width: calc(100% + 10px);
+}
+
+.span_background_header_2 {
+    margin-right: 10px;
+}
+
+.span_background_caption::after {
+    bottom: 6px;
+    height: 10px;
+    background: #fdcb43;
+    width: calc(100% + 10px);
+}
+
+.span_background_foods1::after {
+    bottom: 24px;
+    height: 26px;
+    background: #fdcb43;
+    width: 80px;
+}
+
+.span_background_foods2::after {
+    bottom: 8px;
+    height: 20px;
+    background: #fdcb43;
+    width: calc(100% + 10px);
+}
+
+.span_background_footer::after {
+    bottom: 6px;
+    height: 24px;
+    background: #fff83c;
+    width: calc(100% + 20px);
+}
+
+.span_foreground_strike_out {
+    text-decoration: line-through red;
+}

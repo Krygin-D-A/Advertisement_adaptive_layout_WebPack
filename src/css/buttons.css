@@ -1,0 +1,51 @@
+﻿/* Buttons. Author: Krygin D.A., 11.2020 */
+
+input[class^="button"] {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: Verdana, sans-serif, Geneva, Tahoma;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input[class^="button"]:hover {
+    cursor: pointer;
+}
+
+.button_color {
+    background-color: #fdcb43;
+    border-width: 0px;
+    box-shadow: 0px 3px #b18e30;
+}
+
+.button_color_border {
+    background-color: #fdcb43;
+    border-width: 1px;
+    box-shadow: 0px 3px #b18e30;
+    border-style: solid;
+    border-color: #b18e30;
+}
+
+.button_color_border[value="Отправить"] {
+    width: 140px;
+    margin-top: 10px;
+}
+
+.button_color_border[value="Зарегистрироваться"] {
+    width: 170px;
+    margin-top: 40px;
+}
+
+.button_white {
+    background-color: white;
+    border-style: solid;
+    border-color: #fdcb43;
+    margin-bottom: 15px;
+}
+
+.button_right {
+    text-align: right;
+    margin-bottom: auto;
+    margin-top: auto;
+}
